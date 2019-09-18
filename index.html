@@ -1,49 +1,53 @@
-<!-- \
-    
-    needed stuff-
-        states and switching states
-            each state is the state of the webpage [0-4] for 1-5 states = landing, picking, adding, dividing, result
-        only things begin updated: Main text (non-prompt text), Prompt Text(examples, when ready click next)
-
-    landing page = "i can read your mind" + button prompt to start
-    choosing page = "pick a number between 01-99" + prompt for next "page" + prompt for starting changed to "restart"
-     - "next" button prompt "when you are ready press next" above it
-
--->
-
-
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Mind Reader</title>
-    <meta name="description" content="I can read your mind, click the button to see it happen!">
-    <meta name="author" content="MAL">
+    <title>Mind Reader!</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--- Other CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- My CSS -->
+    <link rel='stylesheet' href="style.css">
   </head>
-  <body>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-md'>
-          I can read your mind
+  <body>    
+      <div class='d-flex-justify-content-center'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-md'>
+              <div class='mainText'>
+                test text
+              </div>
+              <div class='subText'>
+                description text
+              </div>              
+              <div class='col-md'>
+                <div class='startButton'>
+                    <button type='button'>START</button>
+                </div>
+              </div>
+              <div class='col-md'>
+                <div class='nextButton'>
+                    <button type='button'>NEXT</button>
+                </div>
+              </div>
+              <div class='col-md'>
+                <div class='resetButton'>
+                    <button type='button'>RESET</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
+            
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--Other JS-->
-    <script src="js/main.js"></script>
-  
-    </body>
+    <!--- My JS --->
+    <script src='main.js'></script>
+  </body>
 </html>
