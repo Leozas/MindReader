@@ -108,7 +108,7 @@ function renderState() {
                 if (i % 9 == 0) {
                     mainText.innerHTML += i + " = " + yourSym + "<br>";
                 } else {
-                    var ranSym = newSym[Math.floor(Math.random() * 10)]
+                    var ranSym = newSym[Math.floor(Math.random() * 8)]
                     mainText.innerHTML += i + " = " + ranSym + "<br>";
                 }
             }
